@@ -39,13 +39,10 @@ You can test all API endpoints easily by importing the following Postman collect
 │   │── node_modules/  
 │   │── controllers/ 
 │   │   └── shorturlsController.js   # Core logic for URL creations, redirects, stats
-
 │   │── middlewares/  
 │   │   └── logger.js   # Middleware for request logging to log files
-
 │   │── models/   
 │   │   └── urlStore.js   # In-memory store for URLs and click tracking data
-
 │   │── routes/   
 │   │   └── shorturls.js  # Defines HTTP route handlers
 │   │── utils/   
