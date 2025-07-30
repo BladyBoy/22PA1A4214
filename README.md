@@ -30,6 +30,32 @@ You can test all API endpoints easily by importing the following Postman collect
 [https://www.postman.com/winter-meteor-543402/workspace/public-workspace/collection/44123317-61d14958-7ce1-4791-995d-2817dcc855e0](https://www.postman.com/winter-meteor-543402/workspace/public-workspace/collection/44123317-61d14958-7ce1-4791-995d-2817dcc855e0?action=share&creator=44123317)
 
 
+## Structure of the Project
+```
+22pa1a4214/
+│── logs/  # Stores all incoming HTTP request logs asynchronously
+│── node_modules/
+│── src/   # Source code
+│   │── node_modules/  
+│   │── controllers/ 
+│   │   └── shorturlsController.js   # Core logic for URL creations, redirects, stats
+
+│   │── middlewares/  
+│   │   └── logger.js   # Middleware for request logging to log files
+
+│   │── models/   
+│   │   └── urlStore.js   # In-memory store for URLs and click tracking data
+
+│   │── routes/   
+│   │   └── shorturls.js  # Defines HTTP route handlers
+│   │── utils/   
+│   │   └── shortCodeGenerator.js   # helper functions
+│   └── app.js
+│── package.json         
+│── package-lock.json         
+└── README.md
+```
+
 ## API Endpoints
 
 ### POST `/shorturls`
