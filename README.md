@@ -51,6 +51,7 @@ You can test all API endpoints easily by importing the following Postman collect
 │   │── utils/   
 │   │   └── shortCodeGenerator.js   # helper functions
 │   └── app.js
+│── tests/
 │── package.json         
 │── package-lock.json         
 └── README.md
