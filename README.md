@@ -24,10 +24,13 @@ This is a lightweight URL Shortener microservice built with Node.js and Express.
 
 ## Postman Collection
 
-You can test all API endpoints easily by importing the following Postman collection:
+To facilitate testing, import the provided Postman collection into your API client. This collection contains pre-configured requests with example payloads and expected responses.
 
 **Postman Collection Link:**  
+
 [https://www.postman.com/winter-meteor-543402/workspace/public-workspace/collection/44123317-61d14958-7ce1-4791-995d-2817dcc855e0](https://www.postman.com/winter-meteor-543402/workspace/public-workspace/collection/44123317-61d14958-7ce1-4791-995d-2817dcc855e0?action=share&creator=44123317)
+
+This collection covers all API endpoints including URL creation, redirection, and statistics retrieval.
 
 
 ## Structure of the Project
@@ -155,15 +158,6 @@ npm start
 
 
 4. **Test API endpoints** using an API client such as Postman, curl, or Insomnia.
-
-## Postman Collection
-
-To facilitate testing, import the provided Postman collection into your API client. This collection contains pre-configured requests with example payloads and expected responses.
-
-**Postman Collection Link:**  
-[Insert your Postman collection shareable link here]
-
-This collection covers all API endpoints including URL creation, redirection, and statistics retrieval.
 
 ## Notes
 
