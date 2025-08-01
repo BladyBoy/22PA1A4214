@@ -6,16 +6,16 @@ const app = express();
 
 app.use(express.json());
 
-// Using loggign middleware
+// Using logging middleware
 app.use(loggingMiddleware);
 
-// declaring routes
-app.use(shorturlsRouter);
-
-// Test route 
+// test route
 app.get('/test', (req, res) => {
   res.json({ message: 'Test route is working!' });
 });
+
+// main route
+app.use(shorturlsRouter);
 
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {

@@ -1,15 +1,15 @@
 const fs = require('fs');
 const path = require('path');
 
-// Log file path: located at the project root under logs/request.log
+// Log file 
 const logFilePath = path.join(__dirname, '../../logs/request.log');
 
-// Create logs directory if it doesn't exist
+// Creating logs directory 
 if (!fs.existsSync(path.dirname(logFilePath))) {
   fs.mkdirSync(path.dirname(logFilePath), { recursive: true });
 }
 
-// Return current ISO timestamp
+// Returning current ISO timestamp
 function getTimestamp() {
   return new Date().toISOString();
 }
@@ -21,7 +21,7 @@ function loggingMiddleware(req, res, next) {
 
   const logEntry = `[${timestamp}] ${method} ${url}\n`;
 
-  // Append log to file asynchronously (non-blocking)
+  // Appending log to file asynchronously 
   fs.appendFile(logFilePath, logEntry, err => {
     // Errors are silently ignored here by design
   });

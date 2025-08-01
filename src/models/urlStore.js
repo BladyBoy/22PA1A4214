@@ -11,17 +11,17 @@ const urlDatabase = new Map(); // Stores shortcodes mapped to URL records
 //   clicks: Array<{ timestamp: Date, referrer: string, geo: string }>
 // }
 
-// Check if a shortcode is available (not already used)
+// Checking if a shortcode is available (not already used)
 function isShortcodeAvailable(shortcode) {
   return !urlDatabase.has(shortcode);
 }
 
-// Add a new URL record to the database
+// Adding a new URL record to the database
 function addUrlRecord(urlRecord) {
   urlDatabase.set(urlRecord.shortcode, urlRecord);
 }
 
-// Retrieve a URL record by shortcode
+// Retrieving a URL record by shortcode
 function getUrlRecord(shortcode) {
   return urlDatabase.get(shortcode);
 }

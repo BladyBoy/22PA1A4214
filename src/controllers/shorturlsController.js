@@ -4,9 +4,9 @@ const { generateUniqueShortcode } = require('../utils/shortCodeGenerator.js');
 
 const BASE_URL = `http://localhost:3000`;
 
-// Validating shortcode: alphanumeric only, length 4-10 characters
+// Validating shortcode: alphanumeric only, length 2-10 characters
 function isValidShortcode(code) {
-  return /^[A-Za-z0-9]{4,10}$/.test(code);
+  return /^[A-Za-z0-9]{2,10}$/.test(code);
 }
 
 // Validate URL format
